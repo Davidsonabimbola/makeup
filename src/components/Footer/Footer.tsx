@@ -1,9 +1,6 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Button from 'react-bootstrap/Button';
-import {Facebook, Instagram, Linkedin, TextCenter, Twitter,Youtube} from 'react-bootstrap-icons';
+import { Button } from 'react-bootstrap';
+import {Facebook, Instagram, Linkedin, Twitter,Youtube} from 'react-bootstrap-icons';
 
 
 
@@ -14,10 +11,10 @@ const footercolor: React.CSSProperties = {
 };
 
 
-const textStyle: React.CSSProperties = {
-  textAlign: 'center',
-  color:'black'
-  };
+// const textStyle: React.CSSProperties = {
+//   textAlign: 'center',
+//   color:'black'
+//   };
 
   const newColor: React.CSSProperties = {
     textAlign: 'center',
@@ -41,15 +38,15 @@ const Footer = () => {
   return (
     <>
     
-<div style ={footercolor}>
+<div id = "Footer" style ={footercolor}>
 <br></br>
 <br></br>
 <br></br>
     
   <div>
 <div style = {newColor} color='white'>
-<Button variant="" style= {buttonColor}>Home</Button>
-<Button variant=" " style= {buttonColor}>features</Button>
+<Button variant=" " className = "Home" href ="#Home"style= {buttonColor}>Home</Button>
+<Button variant=" " style= {buttonColor}>AboutUs</Button>
 <Button variant=" " style= {buttonColor}>pricing</Button>
 <Button variant=" " style= {buttonColor}>contact</Button>
 
